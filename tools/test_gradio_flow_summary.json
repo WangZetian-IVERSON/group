@@ -1,0 +1,22 @@
+{
+  "captions": "效果图-1: 客厅\n效果图-2: 卧室\n效果图-3: 卫生间\n效果图-4: 厨房",
+  "images": [
+    [
+      "F:\\comfy\\tools\\generated_gemini25_from_url_1763885884316_054.png",
+      "效果图-1: 客厅"
+    ],
+    [
+      "F:\\comfy\\tools\\generated_gemini25_from_url_1763886707492_891.png",
+      "效果图-2: 卧室"
+    ],
+    [
+      "F:\\comfy\\tools\\generated_gemini25_from_url_1763886724581_314.png",
+      "效果图-3: 卫生间"
+    ],
+    [
+      "F:\\comfy\\tools\\generated_gemini25_from_url_1763886788402_944.png",
+      "效果图-4: 厨房"
+    ]
+  ],
+  "model_preview": "<div style=\"font-family: sans-serif; color: #444;\">3D preview: 尚无 3D 模型可预览。稍后提供 Trip AI API 或模型 URL 即可自动显示。</div>"
+}

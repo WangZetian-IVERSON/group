@@ -1,0 +1,29 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Tools outputs and generated images
+tools/generated_gemini25_from_*
+tools/*_chat_response*.json
+tools/gemini_quota_fallback.json
+tools/generated_gemini25_from_placeholder.png
+tools/generated_gemini25_from_url_*.png
+tools/tripo_http_debug_*.json
+tools/tripo_http_exception_*.json
+tools/run_gradio_flow_log_*.txt
+
+# Tripo downloaded models (binary)
+tools/tripo_output/
+
+# Local editor/project files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

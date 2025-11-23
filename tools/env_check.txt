@@ -1,0 +1,3 @@
+TRIPO_API_KEY: tsk_...myEH
+NANO_API_KEY: sk-I...mY0W
+GOOGLE_GEMINI_BASE_URL: http....com

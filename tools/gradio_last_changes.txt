@@ -1,0 +1,23 @@
+Gradio last changes snapshot
+
+Files saved:
+- f:\comfy\app (1).py  (edited, current active Gradio app)
+- f:\comfy\app_gradio_final.py  (snapshot copy created)
+- f:\comfy\tools\run_gemini25_chat.py  (edited helper, accepts prompt + aspect)
+- f:\comfy\tools\run_gemini25_chat_saved.py  (snapshot copy created)
+
+Summary of recent edits:
+- api_generate_image: when using Gemini helper, now passes dynamic prompt and aspect ratio, snapshots pre-existing generated files and returns only newly created files to avoid re-using old images.
+- run_gradio_flow: returns gallery entries as [image, caption] pairs; added optional `show_ref` flag to optionally include the internal colored floorplan as first gallery item for debugging.
+- UI: added `Show colored floorplan (debug)` checkbox and passed it to `run_gradio_flow`.
+
+How to open current Gradio app:
+1. Activate venv: & .\.venv\Scripts\Activate.ps1
+2. Set env vars and run: 
+   $env:GOOGLE_GEMINI_BASE_URL='https://newapi.pockgo.com'
+   $env:NANO_API_KEY='sk-<your-key>'
+   & .\.venv\Scripts\python.exe .\app` (1).py
+
+Files of interest in tools/: gemini25_chat_response.json and generated_gemini25_from_url_*.png
+
+Timestamp: (saved by assistant)

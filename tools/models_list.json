@@ -1,0 +1,1307 @@
+[
+  {
+    "id": "chatgpt-4o-latest",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-3-5-haiku-20241022",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-3-5-haiku-code",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-3-7-sonnet-20250219",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-3-7-sonnet-20250219-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-3-7-sonnet-20250219-thinking-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-3-opus-20240229",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-3-opus-20240229-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-4-opus-20250514",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-4-opus-20250514-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-4-opus-20250514-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-4-opus-20250514-thinking-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-haiku-4-5-20251001",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "aws",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-1-20250805",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-1-20250805-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-1-20250805-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-1-20250805-thinking-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-1-code",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-20250514",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-20250514-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-20250514-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-20250514-thinking-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-opus-4-code",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-20250514",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-20250514-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-20250514-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "vertex-ai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929-thinking-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4-code",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4.5",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4.5-code",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4.5-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4.5-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "claude-sonnet-4.5-thinking-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "command",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "cohere",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "command-a-03-2025",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "cohere",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "command-light",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "cohere",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "command-light-nightly",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "cohere",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "command-nightly",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "cohere",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "command-r",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "cohere",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "command-r-plus",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "cohere",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "command-r-plus-08-2024",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "cohere",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "deepseek-r1-0528",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "deepseek-v3.1",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "deepseek-v3.1-terminus",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "deepseek-v3.1-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "deepseek-v3.2-exp",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "deepseek-v3.2-exp-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "doubao-seed-1-6-thinking-250715",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "volcengine",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.0-flash-exp-image",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.0-flash-preview-image-generation",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-image",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-image-preview",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-lite",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-lite-preview-06-17",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-lite-preview-09-2025",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-lite-preview-09-2025-search",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-lite-preview-09-2025-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-lite-search",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-lite-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-04-17",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-04-17-search-preview",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-04-17-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-05-20",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-05-20-search-preview",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-05-20-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-09-2025",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-09-2025-search",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-09-2025-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-preview-tts",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-search",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-flash-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro-preview-06-05-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro-preview-06-05-search-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro-preview-06-05-thinking-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro-search",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-2.5-pro-thinking-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-image-preview",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview-search",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview-search-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview-thinking-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview-thinking-high",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview-thinking-high-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview-thinking-low",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gemini-3-pro-preview-thinking-low-count",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "glm-4.5",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "glm-4.5-air",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "glm-4.6",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "glm-4.6-turbo",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-3.5-turbo",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-3.5-turbo-0125",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4-turbo",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4-turbo-2024-04-09",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4o",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4o-2024-05-13",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4o-2024-08-06",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4o-2024-11-20",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4o-all",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4o-mini",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-4o-mini-2024-07-18",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-5",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "openai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-5-chat",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-5.1",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-5.1-chat-2025-11-13",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-5.1-codex",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-5.1-codex-mini",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-5.1-codex-mini-2025-11-13",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "gpt-5.1-high",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-3",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-3-deepsearch",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-3-deepsearch-reason",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-3-image",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-3-reason",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-4",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "xai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-4-0709",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "xai",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-4-1",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-4-1-deepsearch",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "grok-4-fast",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "kimi-k2-0711-preview",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "kimi-k2-0905",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "kimi-k2-code",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "kimi-k2-thinking",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "longcat-chat",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "minimax-m2",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "mistral-large-latest",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "mistral",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "nano-banana",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "nano-banana-pro",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "o1-all",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "qwen-image",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "qwen3-235b-a22b",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "ali",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "qwen3-235b-a22b-07-25",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "qwen3-coder",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "qwen3-max",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "seedream-4.0",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  },
+  {
+    "id": "seedream-4.0-2k",
+    "object": "model",
+    "created": 1626777600,
+    "owned_by": "custom",
+    "supported_endpoint_types": [
+      "openai"
+    ]
+  }
+]

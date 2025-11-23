@@ -1,0 +1,8 @@
+{
+  "error": {
+    "message": "分组 default 下模型 gemini-3-pro-image-preview 无可用渠道（distributor） (request id: 2025112217190947929124r5TszD2k)",
+    "type": "new_api_error",
+    "param": "",
+    "code": "model_not_found"
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "5": {
+    "inputs": {
+      "prompt": [
+        "34",
+        0
+      ],
+      "model": "gemini-2.5-flash-image-preview",
+      "seed": 544758004681276,
+      "aspect_ratio": "auto",
+      "images": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "GeminiImageNode",
+    "_meta": {
+      "title": "Google Gemini Image"
+    }
+  },
+  "34": {
+    "inputs": {
+      "string_a": [
+        "51",
+        0
+      ],
+      "string_b": "",
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "Concatenate"
+    }
+  },
+  "41": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "73",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "43": {
+    "inputs": {
+      "prompt": [
+        "45",
+        0
+      ],
+      "model": "gemini-2.5-flash-image-preview",
+      "seed": 664429447410604,
+      "aspect_ratio": "auto",
+      "images": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "GeminiImageNode",
+    "_meta": {
+      "title": "Google Gemini Image"
+    }
+  },
+  "45": {
+    "inputs": {
+      "string_a": "把这张cad转换成彩色平面图",
+      "string_b": "简约风格，木地板，棕色沙发，瓷砖桌子，马赛克瓷砖厕所地板",
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "Concatenate"
+    }
+  },
+  "48": {
+    "inputs": {
+      "string_a": [
+        "51",
+        0
+      ],
+      "string_b": "卧室效果图",
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "Concatenate"
+    }
+  },
+  "51": {
+    "inputs": {
+      "value": "生成这张彩色平面图的一张3D效果图："
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "字符串（多行）"
+    }
+  },
+  "52": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "53": {
+    "inputs": {
+      "string_a": [
+        "51",
+        0
+      ],
+      "string_b": "卫生间效果图",
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "Concatenate"
+    }
+  },
+  "54": {
+    "inputs": {
+      "prompt": [
+        "53",
+        0
+      ],
+      "model": "gemini-2.5-flash-image-preview",
+      "seed": 572499285584704,
+      "aspect_ratio": "auto",
+      "images": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "GeminiImageNode",
+    "_meta": {
+      "title": "Google Gemini Image"
+    }
+  },
+  "55": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "56": {
+    "inputs": {
+      "prompt": [
+        "58",
+        0
+      ],
+      "model": "gemini-2.5-flash-image-preview",
+      "seed": 1021788770797096,
+      "aspect_ratio": "auto",
+      "images": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "GeminiImageNode",
+    "_meta": {
+      "title": "Google Gemini Image"
+    }
+  },
+  "57": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "56",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "58": {
+    "inputs": {
+      "string_a": [
+        "51",
+        0
+      ],
+      "string_b": "厨房效果图",
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "Concatenate"
+    }
+  },
+  "65": {
+    "inputs": {
+      "prompt": [
+        "70",
+        0
+      ],
+      "model": "gemini-2.5-flash-image-preview",
+      "seed": 386372320780533,
+      "aspect_ratio": "auto",
+      "images": [
+        "68",
+        0
+      ]
+    },
+    "class_type": "GeminiImageNode",
+    "_meta": {
+      "title": "Google Gemini Image"
+    }
+  },
+  "68": {
+    "inputs": {
+      "image": "pasted/image (5).png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  },
+  "69": {
+    "inputs": {
+      "value": "根据这张粗糙的cad草稿生成一个精细的cad图片，白底，黑色cad线条，不允许出现任何文字，不允许改变墙体结构，只能大致改动家具位置，可以适当增添家具，保证画上去的家具的位置大致固定，保证户型的大致比例不变并且必须包含以下空间："
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "字符串（多行）"
+    }
+  },
+  "70": {
+    "inputs": {
+      "string_a": [
+        "69",
+        0
+      ],
+      "string_b": "卧室，厨房，厕所，客厅，仓库",
+      "delimiter": ""
+    },
+    "class_type": "StringConcatenate",
+    "_meta": {
+      "title": "Concatenate"
+    }
+  },
+  "73": {
+    "inputs": {
+      "prompt": [
+        "48",
+        0
+      ],
+      "model": "gemini-2.5-flash-image-preview",
+      "seed": 759778962016196,
+      "aspect_ratio": "auto",
+      "images": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "GeminiImageNode",
+    "_meta": {
+      "title": "Google Gemini Image"
+    }
+  },
+  "76": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "65",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "77": {
+    "inputs": {
+      "model_file": [
+        "82",
+        0
+      ],
+      "image": ""
+    },
+    "class_type": "Preview3D",
+    "_meta": {
+      "title": "预览3D"
+    }
+  },
+  "80": {
+    "inputs": {
+      "images": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "预览图像"
+    }
+  },
+  "82": {
+    "inputs": {
+      "TAPose": false,
+      "Seed": 1,
+      "Material_Type": "PBR",
+      "Polygon_count": "500K-Triangle",
+      "Images": [
+        "102",
+        0
+      ]
+    },
+    "class_type": "Rodin3D_Gen2",
+    "_meta": {
+      "title": "Rodin 3D Generate - Gen-2 Generate"
+    }
+  },
+  "86": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "43",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存图像"
+    }
+  },
+  "94": {
+    "inputs": {
+      "unet_name": "flux1-dev-kontext_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "UNet加载器"
+    }
+  },
+  "95": {
+    "inputs": {
+      "seed": 1015211852291892,
+      "steps": 20,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 0.1,
+      "model": [
+        "94",
+        0
+      ],
+      "positive": [
+        "100",
+        0
+      ],
+      "negative": [
+        "101",
+        0
+      ],
+      "latent_image": [
+        "97",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "K采样器"
+    }
+  },
+  "97": {
+    "inputs": {
+      "pixels": [
+        "43",
+        0
+      ],
+      "vae": [
+        "99",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE编码"
+    }
+  },
+  "98": {
+    "inputs": {
+      "clip_name1": "clip_l.safetensors",
+      "clip_name2": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "双CLIP加载器"
+    }
+  },
+  "99": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "加载VAE"
+    }
+  },
+  "100": {
+    "inputs": {
+      "text": "保持平面图布局不变，平面图材质更清晰，放大图像",
+      "clip": [
+        "98",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP文本编码"
+    }
+  },
+  "101": {
+    "inputs": {
+      "conditioning": [
+        "100",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "条件零化"
+    }
+  },
+  "102": {
+    "inputs": {
+      "samples": [
+        "95",
+        0
+      ],
+      "vae": [
+        "99",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE解码"
+    }
+  }
+}

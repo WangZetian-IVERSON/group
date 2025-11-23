@@ -1,0 +1,2884 @@
+{
+  "chatgpt-4o-latest": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-3-5-haiku-20241022": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "invalid character '<' looking for beginning of value",
+          "type": "bad_response_body",
+          "param": "",
+          "code": "bad_response_body"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-3-5-haiku-code": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-3-7-sonnet-20250219": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-3-7-sonnet-20250219-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-3-7-sonnet-20250219-thinking-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 503,
+      "response": {
+        "error": {
+          "message": "分组 default 下模型 claude-3-7-sonnet-20250219-thinking-count 无可用渠道（distributor） (request id: 20251122172032675596564XQBKqBFg)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "model_not_found"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-3-opus-20240229": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-3-opus-20240229-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-4-opus-20250514": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-4-opus-20250514-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-4-opus-20250514-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-4-opus-20250514-thinking-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-haiku-4-5-20251001": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "invalid character '<' looking for beginning of value",
+          "type": "bad_response_body",
+          "param": "",
+          "code": "bad_response_body"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-1-20250805": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-1-20250805-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-1-20250805-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-1-20250805-thinking-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-1-code": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-20250514": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-20250514-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-20250514-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-20250514-thinking-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-opus-4-code": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "upstream error: do request failed (request id: 20251122172142324466390wuqmcNR7)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "do_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4-20250514": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not implemented (request id: 20251122172144850963904XSuV1x6g)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4-20250514-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not implemented (request id: 20251122172145152421049KmiPCCE6)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4-20250514-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 503,
+      "response": {
+        "error": {
+          "message": "分组 default 下模型 claude-sonnet-4-20250514-thinking 无可用渠道（distributor） (request id: 20251122172145349419244LHzForth)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "model_not_found"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4-5-20250929": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172146149133848NRczqjmz)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4-5-20250929-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 202511221721467901787128hOfuTp1)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4-5-20250929-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "invalid character '<' looking for beginning of value",
+          "type": "bad_response_body",
+          "param": "",
+          "code": "bad_response_body"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4-5-20250929-thinking-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172148148434637Wqkk998)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4-code": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not implemented (request id: 2025112217214938766388FNmXTrsQ)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4.5": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 2025112217215090163783mM2iGHhM)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4.5-code": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not implemented (request id: 20251122172150944546086KQwyOIGl)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4.5-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not implemented (request id: 20251122172152157003402sG3FuBuG)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4.5-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "invalid character '<' looking for beginning of value",
+          "type": "bad_response_body",
+          "param": "",
+          "code": "bad_response_body"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "claude-sonnet-4.5-thinking-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172154223533543YHBUYUTN)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "command": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 422,
+      "response": {
+        "error": {
+          "message": "unknown field: parameter 'n' is not a valid field. For proper usage, please refer to https://***.com/***/***",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "command-a-03-2025": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 422,
+      "response": {
+        "error": {
+          "message": "unknown field: parameter 'n' is not a valid field. For proper usage, please refer to https://***.com/***/***",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "command-light": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 422,
+      "response": {
+        "error": {
+          "message": "unknown field: parameter 'n' is not a valid field. For proper usage, please refer to https://***.com/***/***",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "command-light-nightly": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 422,
+      "response": {
+        "error": {
+          "message": "unknown field: parameter 'n' is not a valid field. For proper usage, please refer to https://***.com/***/***",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "command-nightly": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 422,
+      "response": {
+        "error": {
+          "message": "unknown field: parameter 'n' is not a valid field. For proper usage, please refer to https://***.com/***/***",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "command-r": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 422,
+      "response": {
+        "error": {
+          "message": "unknown field: parameter 'n' is not a valid field. For proper usage, please refer to https://***.com/***/***",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "command-r-plus": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 422,
+      "response": {
+        "error": {
+          "message": "unknown field: parameter 'n' is not a valid field. For proper usage, please refer to https://***.com/***/***",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "command-r-plus-08-2024": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 429,
+      "response": {
+        "error": {
+          "message": "Please wait and try again later",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "deepseek-r1-0528": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "deepseek-v3.1": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "deepseek-v3.1-terminus": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "deepseek-v3.1-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "deepseek-v3.2-exp": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "deepseek-v3.2-exp-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "doubao-seed-1-6-thinking-250715": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.0-flash-exp-image": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.0-flash-preview-image-generation": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-image": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 2025112217222626606834mzguUNea)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-image-preview": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172226694399501ZiCTMZ0t)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-lite": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-lite-preview-06-17": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-lite-preview-09-2025": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-lite-preview-09-2025-search": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-lite-preview-09-2025-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-lite-search": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-lite-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-04-17": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-04-17-search-preview": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-04-17-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-05-20": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-05-20-search-preview": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-05-20-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-09-2025": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-09-2025-search": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-09-2025-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-preview-tts": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-search": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-flash-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-pro": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-pro-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-pro-preview-06-05-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-pro-preview-06-05-search-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-pro-preview-06-05-thinking-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-pro-search": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-pro-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-2.5-pro-thinking-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-image-preview": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 503,
+      "response": {
+        "error": {
+          "message": "分组 default 下模型 gemini-3-pro-image-preview 无可用渠道（distributor） (request id: 20251122172303910858328jR9R7OkQ)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "model_not_found"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 202511221723041057496321Q26Vhjd)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172304278245310iiSZngsb)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview-search": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172304882644602jjp362R2)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview-search-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172305164285920OKdU4Z5T)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172305336551412NNtJ5B8D)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview-thinking-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172305639282428AVN4r2lI)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview-thinking-high": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172306175970836LVOyc4Rc)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview-thinking-high-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172306607584052h70eoDA3)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview-thinking-low": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172306912790137LOpf6YLw)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gemini-3-pro-preview-thinking-low-count": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172307323043058zFBnBv4b)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "glm-4.5": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "glm-4.5-air": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "glm-4.6": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "glm-4.6-turbo": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-3.5-turbo": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 502,
+      "ok": false,
+      "raw_text": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>pockgo.com | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/main.css\" />\n</head>\n<body>\n<div id=\"cf-wrapper\">\n    <div id=\"cf-error-details\" class=\"p-0\">\n        <header class=\"mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8\">\n            <h1 class=\"inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2\">\n                <span class=\"inline-block\">Bad gateway</span>\n                <span class=\"code-label\">Error code 502</span>\n            </h1>\n            <div>\n                Visit <a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=newapi.pockgo.com\" target=\"_blank\" rel=\"noopener noreferrer\">cloudflare.com</a> for more information.\n            </div>\n            <div class=\"mt-3\">2025-11-22 09:23:12 UTC</div>\n        </header>\n        <div class=\"my-8 bg-gradient-gray\">\n            <div class=\"w-240 lg:w-full mx-auto\">\n                <div class=\"clearfix md:px-8\">\n                    <div id=\"cf-browser-status\" class=\" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center\">\n  <div class=\"relative mb-10 md:m-0\">\n    \n    <span class=\"cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat\"></span>\n    <span class=\"cf-icon-ok w-12"
+    }
+  },
+  "gpt-3.5-turbo-0125": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-4": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 502,
+      "ok": false,
+      "raw_text": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>pockgo.com | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/main.css\" />\n</head>\n<body>\n<div id=\"cf-wrapper\">\n    <div id=\"cf-error-details\" class=\"p-0\">\n        <header class=\"mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8\">\n            <h1 class=\"inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2\">\n                <span class=\"inline-block\">Bad gateway</span>\n                <span class=\"code-label\">Error code 502</span>\n            </h1>\n            <div>\n                Visit <a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=newapi.pockgo.com\" target=\"_blank\" rel=\"noopener noreferrer\">cloudflare.com</a> for more information.\n            </div>\n            <div class=\"mt-3\">2025-11-22 09:23:13 UTC</div>\n        </header>\n        <div class=\"my-8 bg-gradient-gray\">\n            <div class=\"w-240 lg:w-full mx-auto\">\n                <div class=\"clearfix md:px-8\">\n                    <div id=\"cf-browser-status\" class=\" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center\">\n  <div class=\"relative mb-10 md:m-0\">\n    \n    <span class=\"cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat\"></span>\n    <span class=\"cf-icon-ok w-12"
+    }
+  },
+  "gpt-4-turbo": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-4-turbo-2024-04-09": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-4o": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 502,
+      "ok": false,
+      "raw_text": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>pockgo.com | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/main.css\" />\n</head>\n<body>\n<div id=\"cf-wrapper\">\n    <div id=\"cf-error-details\" class=\"p-0\">\n        <header class=\"mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8\">\n            <h1 class=\"inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2\">\n                <span class=\"inline-block\">Bad gateway</span>\n                <span class=\"code-label\">Error code 502</span>\n            </h1>\n            <div>\n                Visit <a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=newapi.pockgo.com\" target=\"_blank\" rel=\"noopener noreferrer\">cloudflare.com</a> for more information.\n            </div>\n            <div class=\"mt-3\">2025-11-22 09:23:17 UTC</div>\n        </header>\n        <div class=\"my-8 bg-gradient-gray\">\n            <div class=\"w-240 lg:w-full mx-auto\">\n                <div class=\"clearfix md:px-8\">\n                    <div id=\"cf-browser-status\" class=\" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center\">\n  <div class=\"relative mb-10 md:m-0\">\n    \n    <span class=\"cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat\"></span>\n    <span class=\"cf-icon-ok w-12"
+    }
+  },
+  "gpt-4o-2024-05-13": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-4o-2024-08-06": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-4o-2024-11-20": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-4o-all": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 403,
+      "response": {
+        "error": {
+          "message": "用户 [286] 配额不足",
+          "type": "shell_api_error",
+          "param": "",
+          "code": "insufficient_quota"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-4o-mini": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 502,
+      "ok": false,
+      "raw_text": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>pockgo.com | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/main.css\" />\n</head>\n<body>\n<div id=\"cf-wrapper\">\n    <div id=\"cf-error-details\" class=\"p-0\">\n        <header class=\"mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8\">\n            <h1 class=\"inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2\">\n                <span class=\"inline-block\">Bad gateway</span>\n                <span class=\"code-label\">Error code 502</span>\n            </h1>\n            <div>\n                Visit <a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_502&utm_campaign=newapi.pockgo.com\" target=\"_blank\" rel=\"noopener noreferrer\">cloudflare.com</a> for more information.\n            </div>\n            <div class=\"mt-3\">2025-11-22 09:23:25 UTC</div>\n        </header>\n        <div class=\"my-8 bg-gradient-gray\">\n            <div class=\"w-240 lg:w-full mx-auto\">\n                <div class=\"clearfix md:px-8\">\n                    <div id=\"cf-browser-status\" class=\" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center\">\n  <div class=\"relative mb-10 md:m-0\">\n    \n    <span class=\"cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat\"></span>\n    <span class=\"cf-icon-ok w-12"
+    }
+  },
+  "gpt-4o-mini-2024-07-18": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-5": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 503,
+      "response": {
+        "error": {
+          "message": "分组 default 下模型 gpt-5 无可用渠道（distributor） (request id: 20251122172326855754818CN9DAkGb)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "model_not_found"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-5-chat": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-5.1": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-5.1-chat-2025-11-13": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-5.1-codex": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 503,
+      "response": {
+        "error": {
+          "message": "分组 default 下模型 gpt-5.1-codex 无可用渠道（distributor） (request id: 20251122172331274703462uSlBzNkH)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "model_not_found"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-5.1-codex-mini": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-5.1-codex-mini-2025-11-13": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "gpt-5.1-high": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-3": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-3-deepsearch": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-3-deepsearch-reason": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-3-image": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-3-reason": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-4": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-4-0709": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-4-1": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-4-1-deepsearch": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "grok-4-fast": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "kimi-k2-0711-preview": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "kimi-k2-0905": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "kimi-k2-code": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "kimi-k2-thinking": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "longcat-chat": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "minimax-m2": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "mistral-large-latest": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 530,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "nano-banana": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 500,
+      "response": {
+        "error": {
+          "message": "not supported model for image generation (request id: 20251122172357878968658k6PfhK7B)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "convert_request_failed"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "nano-banana-pro": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 503,
+      "response": {
+        "error": {
+          "message": "分组 default 下模型 nano-banana-pro 无可用渠道（distributor） (request id: 202511221723584879944481qYDaZgW)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "model_not_found"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "o1-all": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 403,
+      "response": {
+        "error": {
+          "message": "用户 [286] 配额不足",
+          "type": "shell_api_error",
+          "param": "",
+          "code": "insufficient_quota"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "qwen-image": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "qwen3-235b-a22b": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "qwen3-235b-a22b-07-25": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "qwen3-coder": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 404,
+      "response": {
+        "error": {
+          "message": "openai_error",
+          "type": "bad_response_status_code",
+          "param": "",
+          "code": "bad_response_status_code"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "qwen3-max": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 503,
+      "response": {
+        "error": {
+          "message": "分组 default 下模型 qwen3-max 无可用渠道（distributor） (request id: 202511221724077816557685HMcQtbs)",
+          "type": "new_api_error",
+          "param": "",
+          "code": "model_not_found"
+        }
+      },
+      "has_url": false,
+      "has_b64": false,
+      "ok": false
+    }
+  },
+  "seedream-4.0": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 200,
+      "response": {
+        "created": 1763803487,
+        "data": [
+          {
+            "url": "https://p16-dreamina-sign-sg.ibyteimg.com/tos-alisg-i-wopfjsm1ax-sg/6c8bbd63dcb1459f81143e0ac272fdd2~tplv-wopfjsm1ax-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1765152000&x-signature=mbSVIVnZ7aZlh1UrsRfvp0Wxemw%3D&format=.jpeg"
+          },
+          {
+            "url": "https://p16-dreamina-sign-sg.ibyteimg.com/tos-alisg-i-wopfjsm1ax-sg/740cd5dc26da4f019f4b67f89bd440c7~tplv-wopfjsm1ax-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1765152000&x-signature=A%2FIoHekULrzqsuXpBOIYtWZPkj4%3D&format=.jpeg"
+          },
+          {
+            "url": "https://p16-dreamina-sign-sg.ibyteimg.com/tos-alisg-i-wopfjsm1ax-sg/42a618aa1f564aa59f4ed21f8dbb07de~tplv-wopfjsm1ax-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1765152000&x-signature=4%2BV48ts8TXTKFjHIbXAapdFTvyU%3D&format=.jpeg"
+          },
+          {
+            "url": "https://p16-dreamina-sign-sg.ibyteimg.com/tos-alisg-i-wopfjsm1ax-sg/c07a987f73944dd38dcf11bf36ac1ff3~tplv-wopfjsm1ax-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1765152000&x-signature=h4JoWuDIrR4%2FsPO9Hlqn2OzH6Zw%3D&format=.jpeg"
+          }
+        ]
+      },
+      "has_url": true,
+      "has_b64": false,
+      "ok": true
+    }
+  },
+  "seedream-4.0-2k": {
+    "image_like": true,
+    "supported": [
+      "openai"
+    ],
+    "test": {
+      "status_code": 200,
+      "response": {
+        "created": 1763803520,
+        "data": [
+          {
+            "url": "https://p16-dreamina-sign-sg.ibyteimg.com/tos-alisg-i-wopfjsm1ax-sg/a6719dbaef624f589b1921f1b8e64b64~tplv-wopfjsm1ax-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1765152000&x-signature=zjXZ4q8RXche7RkgTbFkNwLLjqE%3D&format=.jpeg"
+          },
+          {
+            "url": "https://p16-dreamina-sign-sg.ibyteimg.com/tos-alisg-i-wopfjsm1ax-sg/1a3f89e7230545358fe67323890b8c13~tplv-wopfjsm1ax-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1765152000&x-signature=IKkTEaBG%2FBJWS2Ww40GHgDeyGKI%3D&format=.jpeg"
+          },
+          {
+            "url": "https://p16-dreamina-sign-sg.ibyteimg.com/tos-alisg-i-wopfjsm1ax-sg/e191a3820d1d47ec801ec23bc253fed5~tplv-wopfjsm1ax-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1765152000&x-signature=pt9WXWHEqnq5mTmiZ8fVNFbyPBE%3D&format=.jpeg"
+          },
+          {
+            "url": "https://p16-dreamina-sign-sg.ibyteimg.com/tos-alisg-i-wopfjsm1ax-sg/0bd0bc46b996406faa455b1309f9da84~tplv-wopfjsm1ax-aigc_resize:0:0.jpeg?lk3s=43402efa&x-expires=1765152000&x-signature=DIzueDTIxt4kxWFBsTbZMPQb91c%3D&format=.jpeg"
+          }
+        ]
+      },
+      "has_url": true,
+      "has_b64": false,
+      "ok": true
+    }
+  }
+}
