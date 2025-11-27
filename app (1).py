@@ -309,7 +309,8 @@ def run_gradio_flow(layout_prompt, sketch_image, space1, space2, space3, space4,
     Returns (images, captions, model_preview_html).
     """
     if not use_api:
-        return [], "External API is required for this simplified flow. Please enable Use external API.", '<div style="color:#666">No 3D preview available.</div>', 'Tripo: idle'
+        # When no external API is available, return an empty model preview (not HTML)
+        return [], "External API is required for this simplified flow. Please enable Use external API.", '', 'Tripo: idle'
 
     model = api_model or 'gemini-2.5-flash-image'
     # Build base prompt for colored floorplan
@@ -327,10 +328,10 @@ def run_gradio_flow(layout_prompt, sketch_image, space1, space2, space3, space4,
     try:
         ref_image = api_generate_image(model, base_prompt, sketch_image, aspect_ratio=aspect_ratio, size='1024x576')
     except Exception as e:
-        return [], f'Failed to generate colored floorplan: {e}', '<div style="color:#666">No 3D preview available.</div>', 'Tripo: idle'
+        return [], f'Failed to generate colored floorplan: {e}', '', 'Tripo: idle'
 
     if not ref_image:
-        return [], 'Colored floorplan generation returned no image.', '<div style="color:#666">No 3D preview available.</div>', 'Tripo: idle'
+        return [], 'Colored floorplan generation returned no image.', '', 'Tripo: idle'
 
     # prepare space prompts and robustly generate effect images (with retries)
     spaces = [space1, space2, space3, space4]
@@ -380,7 +381,7 @@ def run_gradio_flow(layout_prompt, sketch_image, space1, space2, space3, space4,
         pass
 
     if not images:
-        return [], 'No effect images were generated.', '<div style="color:#666">No 3D preview available.</div>', 'Tripo: idle'
+        return [], 'No effect images were generated.', '', 'Tripo: idle'
 
     # build gallery entries as [image, caption] pairs so Gradio maps each image correctly
     gallery_entries = [[img, cap] for img, cap in zip(images, captions)]
@@ -699,7 +700,46 @@ def run_gradio_flow(layout_prompt, sketch_image, space1, space2, space3, space4,
     except Exception:
         model_file_out = ''
 
-    return gallery_entries, '\n'.join(captions), model_file_out, (tripo_status_path.read_text(encoding='utf-8') if tripo_status_path.exists() else 'Tripo: idle')
+    # Sanitize gallery entries and model_file_out so Gradio only receives valid file paths or http(s) URLs.
+    def _is_valid_path_or_url(v):
+        try:
+            if not v:
+                return False
+            if isinstance(v, (list, dict)):
+                return False
+            s = str(v).strip()
+            # reject obvious HTML or markup
+            if '<' in s or '>' in s or s.startswith('<'):
+                return False
+            # allow http/https URLs
+            if s.startswith('http://') or s.startswith('https://'):
+                return True
+            # allow existing local files
+            p = Path(s)
+            return p.exists()
+        except Exception:
+            return False
+
+    # Filter gallery entries: each entry is [img, caption]
+    safe_gallery = []
+    for ent in gallery_entries:
+        try:
+            img, cap = ent[0], ent[1] if len(ent) > 1 else ''
+            if _is_valid_path_or_url(img):
+                safe_gallery.append([img, cap])
+            else:
+                # skip invalid image entries
+                continue
+        except Exception:
+            continue
+
+    # Ensure model_file_out is valid; otherwise clear it so Model3D gets empty string
+    if not _is_valid_path_or_url(model_file_out):
+        model_file_out = ''
+
+    tripo_status_text = tripo_status_path.read_text(encoding='utf-8') if tripo_status_path.exists() else 'Tripo: idle'
+
+    return safe_gallery, '\n'.join(captions), model_file_out, tripo_status_text
 
 
 def load_models_list_from_workspace():
@@ -977,35 +1017,35 @@ def load_defaults(selected_workflow):
 
 def build_ui():
     with gr.Blocks() as demo:
-        gr.Markdown("# 简化流程：上传草图 → 填写材质与空间 → 生成 4 张效果图")
+        gr.Markdown("# 简化流程：上传草图 → 填写材质与空间 → 生成 4 张效果图\n# Simplified Flow: Upload sketch → specify materials & spaces → generate 4 effect images")
 
-        gr.Markdown("### 1) 彩平图（自动生成，用户不可见）")
-        layout_prompt = gr.Textbox(label="空间与材质（示例：木地板 客厅, 瓷砖 卫生间）", placeholder="例如：木地板 客厅, 瓷砖 卫生间", lines=1)
-        sketch = gr.Image(label="上传草图（黑白平面图）", type="filepath")
+        gr.Markdown("### 1) 彩平图（自动生成，用户不可见）\n### 1) Colored floorplan (generated, hidden from user)")
+        layout_prompt = gr.Textbox(label="空间与材质（示例：木地板 客厅, 瓷砖 卫生间） / Spaces & Materials (e.g. wood floor living room, tile bathroom)", placeholder="例如：木地板 客厅, 瓷砖 卫生间 / e.g.: wood floor living room, tile bathroom", lines=1)
+        sketch = gr.Image(label="上传草图（黑白平面图） / Upload sketch (B&W floorplan)", type="filepath")
 
-        gr.Markdown("### 2) 指定要生成的 4 个空间效果图（只保留这四个）")
-        space1 = gr.Textbox(label="空间 1", placeholder="例如：客厅")
-        space2 = gr.Textbox(label="空间 2", placeholder="例如：卧室")
-        space3 = gr.Textbox(label="空间 3", placeholder="例如：卫生间")
-        space4 = gr.Textbox(label="空间 4", placeholder="例如：厨房")
+        gr.Markdown("### 2) 指定要生成的 4 个空间效果图（只保留这四个）\n### 2) Specify 4 room effect renders (only these four will be generated)")
+        space1 = gr.Textbox(label="空间 1 / Space 1", placeholder="例如：客厅 / e.g.: Living room")
+        space2 = gr.Textbox(label="空间 2 / Space 2", placeholder="例如：卧室 / e.g.: Bedroom")
+        space3 = gr.Textbox(label="空间 3 / Space 3", placeholder="例如：卫生间 / e.g.: Bathroom")
+        space4 = gr.Textbox(label="空间 4 / Space 4", placeholder="例如：厨房 / e.g.: Kitchen")
 
-        use_api = gr.Checkbox(label="Use external API for image nodes (required)", value=True)
-        show_colored = gr.Checkbox(label="Show colored floorplan (debug)", value=False)
-        aspect_ratio = gr.Dropdown(label="Aspect Ratio", choices=["16:9","1:1","3:2","9:16"], value="16:9")
+        use_api = gr.Checkbox(label="使用外部 API（必需） / Use external API for image nodes (required)", value=True)
+        show_colored = gr.Checkbox(label="显示彩平图（调试） / Show colored floorplan (debug)", value=False)
+        aspect_ratio = gr.Dropdown(label="长宽比 / Aspect Ratio", choices=["16:9","1:1","3:2","9:16"], value="16:9")
         # If a local tripo output exists, default the Model URL to the local static server path.
         # Update default model to the most recently downloaded Tripo output so the UI previews it on load
         default_model_filename = 'eaa56d7f-2bcc-4469-a704-28dd5f51344e_pbr.glb'
         default_model_url = f'http://127.0.0.1:8000/{default_model_filename}'
-        model_url = gr.Textbox(label="Model URL (glTF/GLB)", placeholder="https://example.com/model.glb", lines=1, value=default_model_url)
-        tripo_enable = gr.Checkbox(label="Enable 3D generation (Tripo)", value=False)
+        model_url = gr.Textbox(label="Model URL (glTF/GLB) / 模型 URL（glTF/GLB）", placeholder="https://example.com/model.glb", lines=1, value=default_model_url)
+        tripo_enable = gr.Checkbox(label="启用 3D 生成功能（Tripo） / Enable 3D generation (Tripo)", value=False)
 
-        run_button = gr.Button("Run")
-        gallery = gr.Gallery(label="结果", elem_id="gallery")
-        captions = gr.Textbox(label="说明")
+        run_button = gr.Button("Run / 运行")
+        gallery = gr.Gallery(label="Results / 结果", elem_id="gallery")
+        captions = gr.Textbox(label="Captions / 说明")
 
         # place a divider and then a large preview area at the bottom
         gr.Markdown("---")
-        gr.Markdown("**3D Preview (自动预览)**")
+        gr.Markdown("**3D Preview (自动预览) / 3D 预览（自动）**")
         # large placeholder HTML container (full width, fixed height)
         # If default_model_url is set, show the model-viewer immediately so you can preview locally-hosted GLB
         model_viewer_html = (
@@ -1015,11 +1055,11 @@ def build_ui():
             "</div>"
         )
         # Use Gradio's Model3D output so we can display .glb/.gltf files directly
-        model_preview = gr.Model3D(label="3D Model Preview")
+        model_preview = gr.Model3D(label="3D Model Preview / 3D 模型预览")
 
         # Tripo status and manual refresh
-        tripo_status = gr.Textbox(label='Tripo Status', lines=1, value='Idle')
-        check_preview_btn = gr.Button('Check 3D Preview')
+        tripo_status = gr.Textbox(label='Tripo Status / Tripo 状态', lines=1, value='Idle')
+        check_preview_btn = gr.Button('Check 3D Preview / 刷新 3D 预览')
 
         def check_model_preview():
             status_path = basefolder / 'tools' / 'tripo_status.txt'

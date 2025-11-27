@@ -22,7 +22,8 @@ layout_prompt = '木地板 客厅, 瓷砖 卫生间; 色彩偏暖; 北欧风格;
 spaces = ['客厅', '卧室', '卫生间', '厨房']
 
 print('Starting run_gradio_flow with sketch=', sketch)
-res = run(layout_prompt, sketch, spaces[0], spaces[1], spaces[2], spaces[3], True, False, 'gemini-2.5-flash-image', '16:9', '')
+# call order: layout_prompt, sketch_image, space1..space4, use_api, show_ref, api_model, aspect_ratio, enable_tripo, model_url
+res = run(layout_prompt, sketch, spaces[0], spaces[1], spaces[2], spaces[3], True, False, 'gemini-2.5-flash-image', '16:9', True, '')
 print('run_gradio_flow returned:', type(res))
 # res expected: gallery_entries, captions, model_preview_html, tripo_status
 print('Gallery count:', len(res[0]) if res and res[0] else 0)
