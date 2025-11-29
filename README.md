@@ -1,5 +1,20 @@
 # Comfy — 本地开发环境说明
 
+
+
+
+https://github.com/user-attachments/assets/e849bd85-f0e4-4be5-8702-7691b59f68e0
+
+Project Introduction: 
+This project is to simplify the interior design workflow, and interior design workers usually need to spend a lot of time connecting with customers.
+For example, after the floor plan sketch is drawn, it needs to be connected with the user once, and after the model is built, it needs to be connected with the user once, and the intermediate program is quite time-consuming. 
+In this project, users can generate color floor plans, renderings, and 3D models from floor sketches by entering the simplest prompts to describe the space and materials, and can make design ideas and communicate with customers in the shortest time
+
+<img width="1024" height="1024" alt="nanobanana-edited-2025-11-29T09-53-36-229Z" src="https://github.com/user-attachments/assets/c5516307-820d-48ad-bea6-06ed89b3240d" />
+
+
+
+
 下面的说明帮助你在 Windows (PowerShell) 上创建并使用项目虚拟环境，以及如何安装依赖。
 
 1) 激活虚拟环境（PowerShell）
