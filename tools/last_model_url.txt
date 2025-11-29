@@ -1,1 +1,1 @@
-http://127.0.0.1:8000/afa46f4a-9bad-42b8-88c4-82f62eeb7c95_pbr.glb
+http://127.0.0.1:8000/e9bb32e5-0991-415e-b9c6-0e85ad933a24_pbr.glb

@@ -1,0 +1,44 @@
+{
+  "ap-guangzhou": {
+    "success": true,
+    "response": {
+      "JobId": "1386228787469230080",
+      "RequestId": "254c893c-cfdf-41ad-a58e-b95c384623f7"
+    }
+  },
+  "ap-shanghai": {
+    "success": false,
+    "error": {
+      "code": "UnsupportedRegion",
+      "message": "[TencentCloudSDKException] code:UnsupportedRegion message:该接口不支持此地域访问。 requestId:873cedc9-3543-435d-a20e-f916467d62a9"
+    }
+  },
+  "ap-beijing": {
+    "success": false,
+    "error": {
+      "code": "UnsupportedRegion",
+      "message": "[TencentCloudSDKException] code:UnsupportedRegion message:该接口不支持此地域访问。 requestId:d3ca084d-168f-43b4-ae32-dcb77879e0ad"
+    }
+  },
+  "ap-shenzhen": {
+    "success": false,
+    "error": {
+      "code": "UnsupportedRegion",
+      "message": "[TencentCloudSDKException] code:UnsupportedRegion message:该接口不支持此地域访问。 requestId:9724eec0-a779-4e6c-b4a0-82d430b222d1"
+    }
+  },
+  "ap-chengdu": {
+    "success": false,
+    "error": {
+      "code": "UnsupportedRegion",
+      "message": "[TencentCloudSDKException] code:UnsupportedRegion message:该接口不支持此地域访问。 requestId:52fecca6-d6e4-48e2-adc4-1193287f5514"
+    }
+  },
+  "ap-hongkong": {
+    "success": false,
+    "error": {
+      "code": "UnsupportedRegion",
+      "message": "[TencentCloudSDKException] code:UnsupportedRegion message:该接口不支持此地域访问。 requestId:a19ff1f2-cbe6-4e92-9cca-5c7ed2318030"
+    }
+  }
+}

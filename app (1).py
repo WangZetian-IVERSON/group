@@ -512,7 +512,20 @@ def run_gradio_flow(layout_prompt, sketch_image, space1, space2, space3, space4,
 
                     # try to use image_to_model if available; prefer image_to_model, then text_to_model
                     if hasattr(client, 'image_to_model'):
-                        task_id = await client.image_to_model(image=str(_Path(hi_fi_img_local)), prompt='将这张3d的室内空间生成逼真材质的3d模型')
+                        # Try multiple call signatures to support different SDK versions.
+                        try:
+                            # Preferred: keyword image only
+                            task_id = await client.image_to_model(image=str(_Path(hi_fi_img_local)))
+                        except TypeError:
+                            try:
+                                # Some SDKs expect positional arg
+                                task_id = await client.image_to_model(str(_Path(hi_fi_img_local)))
+                            except TypeError:
+                                try:
+                                    # Older variants might accept prompt and image
+                                    task_id = await client.image_to_model(prompt='将这张3d的室内空间生成逼真材质的3d模型', image=str(_Path(hi_fi_img_local)))
+                                except Exception as e:
+                                    raise
                     elif hasattr(client, 'text_to_model'):
                         task_id = await client.text_to_model(prompt='将这张3d的室内空间生成逼真材质的3d模型', image=str(_Path(hi_fi_img_local)))
                     else:
@@ -697,6 +710,51 @@ def run_gradio_flow(layout_prompt, sketch_image, space1, space2, space3, space4,
                 model_file_out = str(candidate)
             else:
                 model_file_out = url
+        # Prefer the newest model file in tools/tripo_output if it exists.
+        try:
+            out_dir = basefolder / 'tools' / 'tripo_output'
+            if out_dir.exists():
+                # look for common model extensions and pick newest by mtime
+                models = [p for p in out_dir.iterdir() if p.suffix.lower() in ('.glb', '.gltf') and p.is_file()]
+                if models:
+                    newest = max(models, key=lambda p: p.stat().st_mtime)
+                    # if we currently have no candidate or newest is newer than candidate, prefer newest
+                    prefer_newest = False
+                    try:
+                        if not model_file_out:
+                            prefer_newest = True
+                        else:
+                            # compare mtimes if model_file_out refers to a local file
+                            mf = Path(model_file_out)
+                            if mf.exists() and mf.is_file():
+                                prefer_newest = newest.stat().st_mtime > mf.stat().st_mtime
+                            else:
+                                # if model_file_out is a URL, prefer newest local file
+                                prefer_newest = True
+                    except Exception:
+                        prefer_newest = True
+
+                    if prefer_newest:
+                        model_file_out = str(newest)
+                        # update last_model_url.txt so UI and other helpers point to the newest model
+                        try:
+                            url = f'http://127.0.0.1:8000/{newest.name}'
+                            last_model_url_path.write_text(url, encoding='utf-8')
+                            # best-effort: ensure a simple static server is running in the output folder
+                            try:
+                                import requests as _requests
+                                r = _requests.get(url, timeout=2.0)
+                                if r.status_code != 200:
+                                    raise RuntimeError('server not responding')
+                            except Exception:
+                                try:
+                                    subprocess.Popen([sys.executable, '-m', 'http.server', '8000'], cwd=str(out_dir), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                                except Exception:
+                                    pass
+                        except Exception:
+                            pass
+        except Exception:
+            pass
     except Exception:
         model_file_out = ''
 
@@ -716,26 +774,60 @@ def run_gradio_flow(layout_prompt, sketch_image, space1, space2, space3, space4,
                 return True
             # allow existing local files
             p = Path(s)
-            return p.exists()
+            # ensure it's a regular file (not a directory)
+            return p.exists() and p.is_file()
         except Exception:
             return False
+
+    # Debug helper: log any resource that would be returned to Gradio but is invalid
+    def _log_invalid_resource(tag, v):
+        try:
+            outdir = basefolder / 'tools'
+            outdir.mkdir(parents=True, exist_ok=True)
+            logp = outdir / 'gradio_flow_debug.log'
+            s = f"[{time.ctime()}] INVALID_RESOURCE {tag}: {repr(v)}\n"
+            with logp.open('a', encoding='utf-8') as f:
+                f.write(s)
+        except Exception:
+            pass
 
     # Filter gallery entries: each entry is [img, caption]
     safe_gallery = []
     for ent in gallery_entries:
         try:
             img, cap = ent[0], ent[1] if len(ent) > 1 else ''
+            # Normalize to string where possible
+            if isinstance(img, Path):
+                img = str(img)
             if _is_valid_path_or_url(img):
                 safe_gallery.append([img, cap])
             else:
-                # skip invalid image entries
+                _log_invalid_resource('gallery_image', img)
                 continue
-        except Exception:
+        except Exception as e:
+            _log_invalid_resource('gallery_entry_exception', str(e))
             continue
 
     # Ensure model_file_out is valid; otherwise clear it so Model3D gets empty string
     if not _is_valid_path_or_url(model_file_out):
+        _log_invalid_resource('model_file_out', model_file_out)
         model_file_out = ''
+
+    # final debug: write full dump of what we will return to Gradio (helps diagnose PermissionError)
+    try:
+        dump = {
+            'time': time.ctime(),
+            'gallery_entries_raw': [[str(a[0]) if a else None, a[1] if len(a)>1 else None] for a in (gallery_entries or [])],
+            'safe_gallery': safe_gallery,
+            'captions_joined': '\n'.join(captions),
+            'model_file_out': model_file_out,
+            'tripo_status_text': tripo_status_text
+        }
+        outdir = basefolder / 'tools'
+        outdir.mkdir(parents=True, exist_ok=True)
+        (outdir / 'gradio_flow_full_dump.json').write_text(json.dumps(dump, ensure_ascii=False, indent=2), encoding='utf-8')
+    except Exception:
+        pass
 
     tripo_status_text = tripo_status_path.read_text(encoding='utf-8') if tripo_status_path.exists() else 'Tripo: idle'
 
@@ -765,7 +857,8 @@ def api_generate_image(model, prompt, image_path=None, aspect_ratio='1:1', size=
     """
     api_base = os.environ.get('GOOGLE_GEMINI_BASE_URL') or os.environ.get('NANO_API_URL') or os.environ.get('API_URL') or 'https://newapi.pockgo.com'
     api_base = api_base.rstrip('/')
-    api_key = os.environ.get('NANO_API_KEY') or os.environ.get('GOOGLE_API_KEY') or os.environ.get('API_KEY')
+    # Prefer COMFY_GEMINI_API_KEY (local .env for this project), then GEMINI_API_KEY, then other common names
+    api_key = os.environ.get('COMFY_GEMINI_API_KEY') or os.environ.get('GEMINI_API_KEY') or os.environ.get('NANO_API_KEY') or os.environ.get('GOOGLE_API_KEY') or os.environ.get('API_KEY')
     if not api_key:
         raise RuntimeError('No API key set in environment (NANO_API_KEY or GOOGLE_API_KEY)')
 
@@ -1032,11 +1125,8 @@ def build_ui():
         use_api = gr.Checkbox(label="使用外部 API（必需） / Use external API for image nodes (required)", value=True)
         show_colored = gr.Checkbox(label="显示彩平图（调试） / Show colored floorplan (debug)", value=False)
         aspect_ratio = gr.Dropdown(label="长宽比 / Aspect Ratio", choices=["16:9","1:1","3:2","9:16"], value="16:9")
-        # If a local tripo output exists, default the Model URL to the local static server path.
-        # Update default model to the most recently downloaded Tripo output so the UI previews it on load
-        default_model_filename = 'eaa56d7f-2bcc-4469-a704-28dd5f51344e_pbr.glb'
-        default_model_url = f'http://127.0.0.1:8000/{default_model_filename}'
-        model_url = gr.Textbox(label="Model URL (glTF/GLB) / 模型 URL（glTF/GLB）", placeholder="https://example.com/model.glb", lines=1, value=default_model_url)
+        # Hidden state for model URL (the UI will auto-refresh preview using `tools/last_model_url.txt`)
+        model_url = gr.State(value='')
         tripo_enable = gr.Checkbox(label="启用 3D 生成功能（Tripo） / Enable 3D generation (Tripo)", value=False)
 
         run_button = gr.Button("Run / 运行")
@@ -1050,8 +1140,8 @@ def build_ui():
         # If default_model_url is set, show the model-viewer immediately so you can preview locally-hosted GLB
         model_viewer_html = (
             "<script type=\"module\" src=\"https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js\"></script>"
-            f"<div style=\"width:100%;height:560px;border:1px solid #ddd;background:#fafafa;display:flex;align-items:center;justify-content:center;\">"
-            f"  <model-viewer id=\"modelviewer\" src=\"{default_model_url}\" alt=\"3D Model\" style=\"width:100%;height:100%;\" camera-controls auto-rotate interaction-prompt=\"auto\" exposure=\"1\" shadow-intensity=\"1\"></model-viewer>"
+            "<div style=\"width:100%;height:560px;border:1px solid #ddd;background:#fafafa;display:flex;align-items:center;justify-content:center;\">"
+            "  <model-viewer id=\"modelviewer\" src=\"\" alt=\"3D Model\" style=\"width:100%;height:100%;\" camera-controls auto-rotate interaction-prompt=\"auto\" exposure=\"1\" shadow-intensity=\"1\"></model-viewer>"
             "</div>"
         )
         # Use Gradio's Model3D output so we can display .glb/.gltf files directly
@@ -1071,7 +1161,8 @@ def build_ui():
                 try:
                     fname = Path(url).name
                     candidate = basefolder / 'tools' / 'tripo_output' / fname
-                    if candidate.exists():
+                    # ensure candidate is a file, not a directory
+                    if candidate.exists() and candidate.is_file():
                         return str(candidate), status
                     # fall back to returning the URL (gradio may load remote URL)
                     return url, status
@@ -1082,12 +1173,55 @@ def build_ui():
 
         # wire Run to simplified flow
         # run_gradio_flow now returns (gallery_entries, captions, model_file_path_or_url, tripo_status)
-        run_button.click(fn=run_gradio_flow, inputs=[layout_prompt, sketch, space1, space2, space3, space4, use_api, show_colored, gr.State(value='gemini-2.5-flash-image'), aspect_ratio, tripo_enable, model_url], outputs=[gallery, captions, model_preview, tripo_status])
+        evt = run_button.click(fn=run_gradio_flow, inputs=[layout_prompt, sketch, space1, space2, space3, space4, use_api, show_colored, gr.State(value='gemini-2.5-flash-image'), aspect_ratio, tripo_enable, model_url], outputs=[gallery, captions, model_preview, tripo_status])
+        # after the flow returns, run a quick preview check to refresh Model3D (this will pick up any background-updated model)
+        evt.then(fn=check_model_preview, inputs=[], outputs=[model_preview, tripo_status])
 
-        # wire check preview button
+        # wire check preview button (manual refresh)
         check_preview_btn.click(fn=check_model_preview, inputs=[], outputs=[model_preview, tripo_status])
 
+        # periodic poll: every few seconds check if Tripo produced a new model and refresh preview automatically
+        try:
+            poll_interval_seconds = 3
+            poller = gr.Interval(every=poll_interval_seconds)
+            # tick will call check_model_preview repeatedly and update the preview when the file/url changes
+            poller.tick(fn=check_model_preview, inputs=[], outputs=[model_preview, tripo_status])
+        except Exception:
+            # If the Gradio version doesn't support Interval, ignore silently
+            pass
+
     return demo
+
+
+def _start_tripo_output_watcher():
+    """Start a daemon thread that watches the tripo_output folder and writes
+    the newest model URL to tools/last_model_url.txt whenever a new file appears.
+    This ensures the preview always points to the latest generated model.
+    """
+    def _watcher():
+        out_dir = basefolder / 'tools' / 'tripo_output'
+        last_seen = None
+        last_model_path = basefolder / 'tools' / 'last_model_url.txt'
+        while True:
+            try:
+                if out_dir.exists():
+                    models = [p for p in out_dir.iterdir() if p.suffix.lower() in ('.glb', '.gltf') and p.is_file()]
+                    if models:
+                        newest = max(models, key=lambda p: p.stat().st_mtime)
+                        if newest.name != last_seen:
+                            # update last_model_url.txt to point to newest file
+                            try:
+                                url = f'http://127.0.0.1:8000/{newest.name}'
+                                last_model_path.write_text(url, encoding='utf-8')
+                                last_seen = newest.name
+                            except Exception:
+                                pass
+            except Exception:
+                pass
+            time.sleep(2)
+
+    t = threading.Thread(target=_watcher, daemon=True)
+    t.start()
 
 if __name__ == "__main__":
     demo = build_ui()

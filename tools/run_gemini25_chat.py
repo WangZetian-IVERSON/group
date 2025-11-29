@@ -9,7 +9,8 @@ import httpx
 
 API_URL = os.getenv('GOOGLE_GEMINI_BASE_URL') or os.getenv('NANO_API_URL') or 'https://newapi.pockgo.com'
 API_URL = API_URL.rstrip('/')
-API_KEY = os.getenv('NANO_API_KEY') or os.getenv('API_KEY') or os.getenv('GOOGLE_API_KEY')
+# Prefer COMFY_GEMINI_API_KEY for local setups, then fall back to other env names
+API_KEY = os.getenv('COMFY_GEMINI_API_KEY') or os.getenv('NANO_API_KEY') or os.getenv('API_KEY') or os.getenv('GOOGLE_API_KEY')
 
 if not API_KEY:
     print('Missing API key in environment (set NANO_API_KEY or GOOGLE_API_KEY).')

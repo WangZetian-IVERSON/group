@@ -1,0 +1,10 @@
+{
+  "authorization": {
+    "status_code": 200,
+    "text": "{\"id\":\"chatcmpl-phTqjWcZaOE8D8MQTpTmVH8zvWlfbi\",\"object\":\"chat.completion\",\"created\":1764402791,\"model\":\"gemini-2.5-flash-image\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"I'm here and ready to help! What can I do for you today?\",\"reasoning_content\":null},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":4,\"completion_tokens\":17,\"total_tokens\":21}}"
+  },
+  "x_api_key": {
+    "status_code": 401,
+    "text": "{\"error\":{\"code\":\"\",\"message\":\"未提供令牌 (request id: 20251129155311871696923hj0YXYkS)\",\"type\":\"new_api_error\"}}"
+  }
+}

@@ -1,1 +1,1 @@
-Tripo HTTP fallback failed: HTTP 400: {"code":2002,"message":"This task type is not supported","suggestion":"Refer to API documentation for supported task types"}
+Tripo: SDK failed, attempting HTTP fallback: 0
