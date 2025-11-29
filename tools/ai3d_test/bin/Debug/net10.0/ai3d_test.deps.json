@@ -1,0 +1,78 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "ai3d_test/1.0.0": {
+        "dependencies": {
+          "TencentCloudSDK.Ai3d": "3.0.1347"
+        },
+        "runtime": {
+          "ai3d_test.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.2": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.2.27524"
+          }
+        }
+      },
+      "TencentCloudSDK.Ai3d/3.0.1347": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2",
+          "TencentCloudSDK.Common": "3.0.1347"
+        },
+        "runtime": {
+          "lib/netstandard2.0/TencentCloudAi3d.dll": {
+            "assemblyVersion": "3.0.1347.0",
+            "fileVersion": "3.0.1347.0"
+          }
+        }
+      },
+      "TencentCloudSDK.Common/3.0.1347": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/TencentCloudCommon.dll": {
+            "assemblyVersion": "3.0.1347.0",
+            "fileVersion": "3.0.1347.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ai3d_test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/13.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "path": "newtonsoft.json/13.0.2",
+      "hashPath": "newtonsoft.json.13.0.2.nupkg.sha512"
+    },
+    "TencentCloudSDK.Ai3d/3.0.1347": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bgdWLUk4lJv5YvF1kCwRyIue7P86hZTi+bbDp1yE8wkEPaJ3n4To4TbxP3XaNeNKBKWPOYgoxsGcm9/oNEoE7Q==",
+      "path": "tencentcloudsdk.ai3d/3.0.1347",
+      "hashPath": "tencentcloudsdk.ai3d.3.0.1347.nupkg.sha512"
+    },
+    "TencentCloudSDK.Common/3.0.1347": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iHkoIcM0mstE+rUYSB0xYaQxE08jaSLuClObWH1NlmZA0D6XQB6cD/Xda//UCYtN7qF21rGIbe/ImQOlm24+Vw==",
+      "path": "tencentcloudsdk.common/3.0.1347",
+      "hashPath": "tencentcloudsdk.common.3.0.1347.nupkg.sha512"
+    }
+  }
+}

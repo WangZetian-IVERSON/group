@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "k5ZZsFZ6iLc=",
+  "success": true,
+  "projectFilePath": "F:\\comfy\\tools\\ai3d_test\\ai3d_test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\30502\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\30502\\.nuget\\packages\\tencentcloudsdk.ai3d\\3.0.1347\\tencentcloudsdk.ai3d.3.0.1347.nupkg.sha512",
+    "C:\\Users\\30502\\.nuget\\packages\\tencentcloudsdk.common\\3.0.1347\\tencentcloudsdk.common.3.0.1347.nupkg.sha512"
+  ],
+  "logs": []
+}
